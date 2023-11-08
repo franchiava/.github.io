@@ -1,0 +1,60 @@
+<div mat-dialog-content>
+    <form class="formulario" [formGroup]="productForm">
+        <div class="col-6 field">
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Nombre</mat-label>
+                <input formControlName="name" matInput type="text" name="name" />
+
+                <mat-error *ngIf="nameControl.hasError('required')">
+                    Este campo es requerido
+                </mat-error>
+                <!-- <mat-error *ngIf="nameControl.hasError('minlength')">
+                    Minimo {{nameControl.errors?.['minlength']?.requiredLength | json}}
+                    caracteres
+                </mat-error> -->
+            </mat-form-field>
+        </div>
+
+        <div class="col-6 field">
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Precio</mat-label>
+                <input formControlName="price" matInput type="text" name="price" />
+            </mat-form-field>
+        </div>
+        
+        
+        <div class="col-6 field">
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Lugar</mat-label>
+                <mat-select formControlName="price" name="price">
+                    <mat-option value="AVIN ICE"> AVIN ICE</mat-option>
+                    <mat-option value="FUC SOLAR"> FUC SOLAR</mat-option>
+                    <mat-option value="TODO VENTANA"> TODO VENTANA</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+s
+        <div class="col-6 field">
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Detalle</mat-label>
+                <input formControlName="detail" matInput type="text" name="detail" />
+            </mat-form-field>
+        </div>
+
+        <div class="col-6 field">
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Categoria</mat-label>
+                <input formControlName="category" matInput type="number" name="category" />
+            </mat-form-field>
+        </div>
+    </form>
+
+</div>
+<div class="flex justify-content-end" mat-dialog-actions>
+    <button mat-button mat-dialog-close>
+        Cancelar
+    </button>
+    <button (click)="onSubmit()" type="submit" mat-button>
+        Guardar
+    </button>
+</div>

@@ -1,0 +1,15 @@
+<div>
+    <button 
+        mat-button
+        color={{colorButton}} 
+        (click)="onClickButton()">
+
+    {{ label }}
+    <ng-template *ngIf="iconName">
+        <mat-icon>
+            {{ iconName }}
+        </mat-icon>
+    </ng-template>
+    </button>
+
+</div>
