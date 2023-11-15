@@ -1,0 +1,24 @@
+
+.example-container {
+  position: static;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+.listed-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ 
+  .sidebar-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg); 
+    right: 0;
+    float: right;
+  }
+}

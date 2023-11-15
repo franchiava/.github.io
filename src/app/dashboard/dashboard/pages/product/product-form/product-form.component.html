@@ -24,16 +24,16 @@
         
         
         <div class="col-6 field">
-            <mat-form-field appearance="outline" class="w-full">
+            <mat-form-field class="w-full">
                 <mat-label>Lugar</mat-label>
-                <mat-select formControlName="price" name="price">
+                <mat-select  [formControl]="priceControl" type="text" name="price">
                     <mat-option value="AVIN ICE"> AVIN ICE</mat-option>
                     <mat-option value="FUC SOLAR"> FUC SOLAR</mat-option>
                     <mat-option value="TODO VENTANA"> TODO VENTANA</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>
-s
+
         <div class="col-6 field">
             <mat-form-field appearance="outline" class="w-full">
                 <mat-label>Detalle</mat-label>

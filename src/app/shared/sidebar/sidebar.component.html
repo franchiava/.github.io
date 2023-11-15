@@ -1,0 +1,41 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer opened="true" class="example-sidenav" mode="side">
+
+    <button (click)="isExpanded = !isExpanded" mat-raised-button>
+      <mat-icon>arrow_right_alt</mat-icon>
+    </button> 
+
+    <mat-nav-list *ngIf="isExpanded" class="listed-button">
+      <span style="color: black;"> Inicio </span>
+      <mat-divider class="w-100 mb-3"></mat-divider>
+
+      <button routerLink="category" class="sidebar-button" mat-button>
+        <mat-icon>
+            bar_chart_4_bars
+          </mat-icon>
+          <span>
+            Categorias
+          </span>
+      </button>
+
+      <button routerLink="product" class="sidebar-button" mat-button>
+        <mat-icon
+          ><span class="material-symbols-outlined">
+            layers
+          </span></mat-icon>
+        Productos
+      </button>
+
+      <span style="color: black">Gestión</span>
+      <mat-divider class="w-100 mb-3"></mat-divider>
+      <button routerLink="user" class="sidebar-button" mat-button>
+        <mat-icon class="user-icon"
+          ><span class="material-symbols-outlined">
+            manage_accounts
+          </span></mat-icon>
+        Usuarios
+      </button>
+    </mat-nav-list>
+  </mat-drawer>
+</mat-drawer-container>
+

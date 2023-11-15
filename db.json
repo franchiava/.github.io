@@ -25,38 +25,6 @@
       "category": 1
     },
     {
-      "id": 4,
-      "name": "Bateria",
-      "price": "U$S 1575",
-      "place": "Fuc solar",
-      "detail": "Bateria de gel de 200ah",
-      "category": 1
-    },
-    {
-      "id": 5,
-      "name": "Bateria",
-      "price": "U$S 577",
-      "place": "Fuc solar",
-      "detail": "Bateria plomo acido 125ah",
-      "category": 1
-    },
-    {
-      "id": 6,
-      "name": "Bateria",
-      "price": "$441..900",
-      "place": "Avin ice",
-      "detail": "Bateria de gel de 200ah",
-      "category": 1
-    },
-    {
-      "id": 7,
-      "name": "Regulador",
-      "price": "U$S 478",
-      "place": "Fuc solar",
-      "detail": "Regulador mppt 30 ah",
-      "category": 1
-    },
-    {
       "id": 8,
       "name": "Regulador",
       "price": "$167..800",
@@ -127,30 +95,6 @@
       "place": "Todo ventana",
       "detail": "40x30. Con mosquitero.Corrediza",
       "category": 2
-    },
-    {
-      "id": 17,
-      "name": "Claraboya",
-      "price": "$171.717",
-      "place": "Todo ventana",
-      "detail": "50,5x 50,5. Expulsable 90°",
-      "category": 1
-    },
-    {
-      "name": "Panel solar ",
-      "price": "200000",
-      "place": null,
-      "detail": "40*30",
-      "category": 2,
-      "id": 18
-    },
-    {
-      "name": null,
-      "price": null,
-      "place": null,
-      "detail": null,
-      "category": null,
-      "id": 19
     }
   ],
   "Categories": [
@@ -173,6 +117,15 @@
     {
       "id": 5,
       "name": "Gas"
+    }
+  ],
+  "User": [
+    {
+      "id": 1,
+      "name": "Franco",
+      "surname":"Chiavassa",
+      "email": "fraancotiago@gmail.com",
+      "password": "123456"
     }
   ]
 }

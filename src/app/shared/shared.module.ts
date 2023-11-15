@@ -11,12 +11,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatListModule } from '@angular/material/list';
-import { ButtonComponent } from '../button/button.component';
-import { MatCardComponent } from '../mat-card/mat-card.component';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
-
+import { ButtonComponent } from './button/button.component';
+import { MatCardComponent } from './mat-card/mat-card.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 
@@ -24,7 +26,8 @@ import { MatSelectModule } from '@angular/material/select';
   declarations: [
     ButtonComponent,
     MatCardComponent,
-
+    SidebarComponent,
+    ToolbarComponent,
   ],
   imports: [
     CommonModule,
@@ -42,6 +45,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatDialogModule,
     MatOptionModule,
     MatSelectModule,
+    RouterModule,
     
     
   ],
@@ -57,11 +61,14 @@ import { MatSelectModule } from '@angular/material/select';
     MatInputModule,
     MatTableModule,
     MatCardModule,
-    ButtonComponent,
-    MatCardComponent,
     MatDialogModule,
     MatOptionModule,
     MatSelectModule,
+    ButtonComponent,
+    MatCardComponent,
+    SidebarComponent,
+    ToolbarComponent,
+    
   ],
 })
 export class SharedModule { }

@@ -1,4 +1,11 @@
 .example-card {
-    max-width: 200px;
-    margin: 50px;
+  height: 200px;
+  width: 200px;
+  margin: 2vh;
+  background: #CDF5FD;
+  float: inline-start
+}
+
+.footer-card{
+  margin: 70px 20px;
   }

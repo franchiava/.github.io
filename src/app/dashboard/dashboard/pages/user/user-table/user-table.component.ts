@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { user } from 'src/app/interfaces/user';
 
 @Component({
   selector: 'app-user-table',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-table.component.css']
 })
 export class UserTableComponent {
-  displayedColumns = ['id','name','surname','email','actions']
+  displayedColumns = ['id','name','surname','email'];
+
+ @Input() dataSource: user[] = [];
+ 
 }

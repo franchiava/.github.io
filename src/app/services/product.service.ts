@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, map, mergeMap, take } from 'rxjs';
 import { Product, ProductCreate } from '../interfaces/product';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/enviroments.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -166,10 +167,13 @@ export class ProductService {
   }
 
   deleteById(id: number) :void {
-    this._products$.pipe(take(1)).subscribe({
-      next: (arrayActual) => {
-      this._products$.next(arrayActual.filter((v) => v.id !== id))
-    }})
+    // this._products$.pipe(take(1)).subscribe({
+    //   next: (arrayActual) => {
+    //   this._products$.next(arrayActual.filter((v) => v.id !== id))
+    // }})
+    this.httpClient.delete(environment.baseApiUrl + '/Products/' + id).pipe().subscribe({
+      next: (Array) => this.loadProduct()
+    })
   }
   
   

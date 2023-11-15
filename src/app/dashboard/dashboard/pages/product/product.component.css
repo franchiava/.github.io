@@ -1,4 +1,8 @@
 main {
  margin: 10%;
- background: #3A4D39
+}
+
+.button {
+    background: #CDF5FD;
+    margin: 4%;
 }

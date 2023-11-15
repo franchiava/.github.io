@@ -1,0 +1,21 @@
+<mat-toolbar class="example-toolbar">
+
+    <button mat-button class="example-icon" type="button"
+      (click)="drawer?.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <div class="title">
+      <span>Mi nueva aplicacion</span>
+    </div>
+  
+  
+    <div class="absolute">
+      <mat-icon> logout
+        <app-button routerLink="auth" label="Cerrar sesion" iconName="logout">
+        </app-button>
+      </mat-icon>
+    </div>
+  
+  
+  </mat-toolbar>

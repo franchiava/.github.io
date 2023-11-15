@@ -1,6 +1,6 @@
 <div>
   <main>
-    <app-user-table>
+    <app-user-table [dataSource]="(User |async) || []">
       
     </app-user-table>
   </main>

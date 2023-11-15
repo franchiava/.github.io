@@ -1,0 +1,9 @@
+.example-toolbar {
+    align-items: center;
+    justify-content: center;
+}
+
+.absolute{
+    background: black;
+    margin-left: 500px;
+}

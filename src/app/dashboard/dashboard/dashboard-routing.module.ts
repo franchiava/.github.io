@@ -7,27 +7,27 @@ import { CategoryComponent } from "./pages/category/category.component";
 
 
 const routes: Routes = [
-    {
-        path: 'home',
-        component: HomeComponent
-    },
-    {
-        path: 'user',
-        component: UserComponent
-    },
-    {
-        path: 'product',
-        component: ProductComponent
-    },
-    {
-        path: 'category',
-        component: CategoryComponent,
-        loadChildren: () => import('./pages/category/category.module').then((m) => m.CategoryModule)
-    },
-    {
-        path: '**',
-        redirectTo: '/dashboard/home'
-    },
+     {
+         path: 'home',
+         component: HomeComponent
+     },
+     {
+         path: 'user',
+         component: UserComponent
+     },
+     {
+         path: 'product',
+         component: ProductComponent
+     },
+     {
+         path: 'category',
+         component: CategoryComponent,
+         loadChildren: () => import('./pages/category/category.module').then((m) => m.CategoryModule)
+     },
+     {
+         path: '**',
+         redirectTo: '/dashboard/home'
+     },
 ]
 
 @NgModule({

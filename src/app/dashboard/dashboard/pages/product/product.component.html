@@ -1,16 +1,8 @@
-<main>
+ <main>
+  <app-button (onClick)="onCreateProduct()" label="Crear producto" iconName="add" ></app-button>
+
   <div class="col-2">
-    <div>
-      <app-button (onClick)="onCreateProduct()" label="Crear producto" iconName="add">
-      </app-button>
-    </div>
-    <table [dataSource]="(data$ | async) || []" mat-table class="mat-elevation-z8">
-
-      <div>
-        <app-button (onClick)="onCreateProduct()" label="Crear producto" iconName="add">
-        </app-button>
-      </div>
-
+  <table [dataSource]="(data$ | async) || []" mat-table class="mat-elevation-z8">
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef> id </th>
         <td mat-cell *matCellDef="let product"> {{product.id}} </td>
