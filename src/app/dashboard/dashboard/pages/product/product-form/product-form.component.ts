@@ -28,12 +28,11 @@ export class ProductFormComponent {
   ){}
 
   onSubmit(): void {
-    // if(this.productForm.invalid){
-    //   this.productForm.markAllAsTouched()
-    // }
-    // else {
+    if(this.productForm.invalid){
+      this.productForm.markAllAsTouched()
+    }
+    else {
       this.dialogRef.close(this.productForm.value)
-      console.log('CORREGIR')
-    // }
+    }
   }
 }

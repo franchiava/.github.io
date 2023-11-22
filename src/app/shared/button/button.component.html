@@ -1,15 +1,9 @@
-<div>
-    <button 
-        mat-button
-        color={{colorButton}} 
-        (click)="onClickButton()">
-
-    {{ label }}
-    <ng-template *ngIf="iconName">
-        <mat-icon>
+<button mat-button [color]="colorButton" (click)="onClickButton()">
+    <ng-template ngIf=" iconName ">
+        <mat-icon class="icon">
             {{ iconName }}
         </mat-icon>
     </ng-template>
-    </button>
 
-</div>
+    {{ label }}
+</button>

@@ -8,15 +8,18 @@ import { SidebarService } from 'src/app/services/sidebar.service';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent {
-
-  isExpanded: boolean = false;
-  showFiller = false;
-
-  constructor(private sidebarServie: SidebarService, private router: Router) {}
-  onNavigate(route: string): void {
-
-    this.router.navigateByUrl(route);
+  export class SidebarComponent implements AfterViewInit {
+    @ViewChild('drawer') public drawer!: MatSidenav;
+  
+    constructor(private sidebarService: SidebarService, private router: Router) { }
+  
+    ngAfterViewInit(): void {
+      this.sidebarService.setSidebar(this.drawer);
+    }
+  
+    onNavigate(route: string): void {
+      this.router.navigateByUrl(route);
+      this.sidebarService.closeSideBar();
+    }
   }
-
-}
+  

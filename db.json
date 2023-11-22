@@ -95,6 +95,14 @@
       "place": "Todo ventana",
       "detail": "40x30. Con mosquitero.Corrediza",
       "category": 2
+    },
+    {
+      "name": "Bateria",
+      "price": "$473.600",
+      "place": "AVIN ICE",
+      "detail": "Bateria de gel de 200ah de ciclo profundo ",
+      "category": 1,
+      "id": 18
     }
   ],
   "Categories": [
@@ -123,7 +131,7 @@
     {
       "id": 1,
       "name": "Franco",
-      "surname":"Chiavassa",
+      "surname": "Chiavassa",
       "email": "fraancotiago@gmail.com",
       "password": "123456"
     }

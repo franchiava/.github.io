@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class UserComponent implements OnInit {
   
-  public User: Observable<user[]>;
+  public User: Observable<user[]>;  
 
 constructor(private userService: UserService) {
    this.User = this.userService.getUsers()
@@ -20,8 +20,5 @@ ngOnInit() : void{
   this.userService.loadUsers();
     this.userService.getUsers()
     .pipe(take(1))
-    .subscribe({
-      next: (value) => console.log(value)
-    })
 }
 }

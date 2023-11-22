@@ -1,6 +1,14 @@
-main {
-  display: over;
-  height: 100%;
+main-wrapper {
+  padding: 13px;
   align-items: center;
   justify-content: center;
-}
+  height: 500px;
+  position: absolute;
+  top: -50px;
+  width: 50%;
+  right: calc(50% - 50px);
+  transition: .3s ease-in-out;
+  z-index: 0;
+  box-shadow: 0 0 15px 9px #00000096;
+
+} 

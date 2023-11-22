@@ -1,8 +1,7 @@
-<mat-drawer opened="true" #drawer class="example-sidenav" mode="side">
+<mat-drawer #drawer class="example-sidenav" mode="side">
     <app-sidebar #drawer></app-sidebar>
 </mat-drawer>
-<app-toolbar [drawer]="drawer"></app-toolbar>
-<main>
-
+<app-toolbar [drawer]="drawer"></app-toolbar>     
+<main class="main-wrapper">
     <router-outlet></router-outlet>
 </main>

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
+import { SidebarService } from 'src/app/services/sidebar.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,7 +9,7 @@ import { MatDrawer } from '@angular/material/sidenav';
 })
 export class ToolbarComponent {
   @Input()
-  public drawer?: MatDrawer ; 
-  }
-  
+   drawer?: MatDrawer ; 
+ 
+}
 

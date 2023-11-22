@@ -1,41 +1,51 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer opened="true" class="example-sidenav" mode="side">
 
-    <button (click)="isExpanded = !isExpanded" mat-raised-button>
-      <mat-icon>arrow_right_alt</mat-icon>
-    </button> 
-
-    <mat-nav-list *ngIf="isExpanded" class="listed-button">
+    <mat-nav-list class="listed-button">
       <span style="color: black;"> Inicio </span>
       <mat-divider class="w-100 mb-3"></mat-divider>
 
-      <button routerLink="category" class="sidebar-button" mat-button>
+      <button class="btn" routerLink="home" class="sidebar-button" mat-button>
         <mat-icon>
-            bar_chart_4_bars
-          </mat-icon>
-          <span>
-            Categorias
+          menu
+          <span class="material-symbols-outlined">
           </span>
+        </mat-icon>
+        Inicio
       </button>
 
-      <button routerLink="product" class="sidebar-button" mat-button>
-        <mat-icon
-          ><span class="material-symbols-outlined">
-            layers
-          </span></mat-icon>
+
+      <button class="btn" routerLink="category" class="sidebar-button" mat-button>
+        <mat-icon>
+          bar_chart_4_bars
+          <span class="material-symbols-outlined">
+          </span>
+        </mat-icon>
+        Categorias
+      </button>
+
+      <button class="btn" routerLink="product" class="sidebar-button" mat-button>
+        <mat-icon>
+          layers
+          <span class="material-symbols-outlined">
+          </span>
+        </mat-icon>
         Productos
       </button>
 
       <span style="color: black">Gestión</span>
-      <mat-divider class="w-100 mb-3"></mat-divider>
-      <button routerLink="user" class="sidebar-button" mat-button>
-        <mat-icon class="user-icon"
-          ><span class="material-symbols-outlined">
-            manage_accounts
-          </span></mat-icon>
+      <mat-divider class="w-100 mb-3"> </mat-divider>
+
+
+      <button class="btn" routerLink="user" class="sidebar-button" mat-button>
+        <mat-icon class="user-icon">
+          manage_accounts
+          <span class="material-symbols-outlined">
+          </span>
+        </mat-icon>
         Usuarios
       </button>
+
     </mat-nav-list>
   </mat-drawer>
 </mat-drawer-container>
-

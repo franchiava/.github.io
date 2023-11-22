@@ -1,21 +1,20 @@
-<mat-toolbar class="example-toolbar">
-
-    <button mat-button class="example-icon" type="button"
-      (click)="drawer?.toggle()">
+<div class="example-sidenav-content">
+  <mat-toolbar class="sidenav">
+    <button mat-icon-button (click)="drawer?.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-  
+
     <div class="title">
       <span>Mi nueva aplicacion</span>
+      <span class="example-spacer"></span>
     </div>
-  
-  
+
+
     <div class="absolute">
-      <mat-icon> logout
-        <app-button routerLink="auth" label="Cerrar sesion" iconName="logout">
-        </app-button>
-      </mat-icon>
+      <app-button routerLink="/auth"  iconName="person_outline">
+
+      </app-button>
+      <!-- Resolver porque  no puedo poner el boton de logout -->
     </div>
-  
-  
   </mat-toolbar>
+</div>

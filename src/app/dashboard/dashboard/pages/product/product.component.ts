@@ -30,7 +30,6 @@ onCreateProduct(): void {
   .subscribe({
     next: (v) => {
       if(v){
-        console.log(v)
         this.ProductService.createProduct(v)
       }
     }
