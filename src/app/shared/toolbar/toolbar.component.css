@@ -1,22 +1,7 @@
-/*Contenido que tenia al pedo 
-/* .example-spacer {
-    flex: 1 1 auto;
-} */
-/* .example-sidenav {
-    padding: 20px;
-    width: 200px;
-} */
-
 
 .sidenav {
     font-size: 20px;
     justify-content: center;
     padding: 13px;
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
-
-}
-
-.title {
-    margin-left: 10%;
-    margin-right: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }

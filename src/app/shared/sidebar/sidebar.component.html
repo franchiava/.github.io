@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer opened="true" class="example-sidenav" mode="side">
+  <mat-drawer #drawer opened="true"  class="example-sidenav" mode="side">
 
     <mat-nav-list class="listed-button">
       <span style="color: black;"> Inicio </span>
@@ -44,6 +44,15 @@
           </span>
         </mat-icon>
         Usuarios
+      </button>
+
+      <button class="btn" routerLink="/auth" class="sidebar-button" mat-button>
+        <mat-icon class="user-icon">
+          person_outline
+          <span class="material-symbols-outlined">
+          </span>
+        </mat-icon>
+        Cerrar sesion 
       </button>
 
     </mat-nav-list>

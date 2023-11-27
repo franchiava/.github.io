@@ -1,3 +1,7 @@
 main {
-    padding: 20px 300px 0 300px;
+    padding: 5rem ;
+}
+
+.mat-elevation-z8 {
+    background: rgb(255, 255, 255);
 }

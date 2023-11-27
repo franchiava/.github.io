@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable, take } from 'rxjs';
-import { Product } from 'src/app/interfaces/product';
-import { ProductService } from 'src/app/services/product.service';
+import { ProductService } from 'src/app/core/services/product.service';
 import { ProductFormComponent } from './product-form/product-form.component';
+import { Product } from 'src/app/core/interfaces/interfaces';
 
 @Component({
   selector: 'app-product',

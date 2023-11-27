@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, take } from 'rxjs';
-import { user } from 'src/app/interfaces/user';
-import { UserService } from 'src/app/services/user.service';
+import { user } from 'src/app/core/interfaces/interfaces';
+import { UserService } from 'src/app/core/services/user.service';
 
 @Component({
   selector: 'app-user',
